@@ -144,7 +144,7 @@ public class CursadaData {
             
 
         try {
-            String sql = "SELECT idMateria, nombre FROM cursada, materia WHERE cursada.idMateria = materia.idMateria\n" +
+            String sql = "SELECT materia.idMateria, nombre FROM cursada, materia WHERE cursada.idMateria = materia.idMateria\n" +
 "and cursada.idAlumno = ?;";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setInt(1, id);
@@ -171,7 +171,7 @@ public class CursadaData {
             
 
         try {
-            String sql = "Select * from materia where idCursada not in "
+            String sql = "Select * from materia where idMateria not in "
                     + "(select idMateria from cursada where idAlumno =?);";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setInt(1, id);

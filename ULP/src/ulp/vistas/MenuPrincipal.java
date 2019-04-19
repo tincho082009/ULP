@@ -43,6 +43,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenu5 = new javax.swing.JMenu();
         jMenuItem9 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
+        jMenuItem10 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem8 = new javax.swing.JMenuItem();
 
@@ -124,6 +125,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(jMenu5);
 
         jMenu6.setText("Carga de notas");
+
+        jMenuItem10.setText("Manipulacion de notas");
+        jMenu6.add(jMenuItem10);
+
         jMenuBar1.add(jMenu6);
 
         jMenu4.setText("Consultas");
@@ -222,6 +227,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
