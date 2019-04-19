@@ -57,6 +57,10 @@ public class VistaMateria extends javax.swing.JInternalFrame {
 
         jLabel2.setText("jLabel2");
 
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("-MATERIAS-");

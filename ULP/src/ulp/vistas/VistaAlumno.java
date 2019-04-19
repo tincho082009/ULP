@@ -61,6 +61,10 @@ public class VistaAlumno extends javax.swing.JInternalFrame {
         bActualizar = new javax.swing.JButton();
         bLimpiar = new javax.swing.JButton();
 
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 204));
         jLabel1.setText("-ALUMNOS-");

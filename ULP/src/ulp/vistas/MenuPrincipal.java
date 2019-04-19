@@ -127,6 +127,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenu6.setText("Carga de notas");
 
         jMenuItem10.setText("Manipulacion de notas");
+        jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem10ActionPerformed(evt);
+            }
+        });
         jMenu6.add(jMenuItem10);
 
         jMenuBar1.add(jMenu6);
@@ -180,6 +185,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
         escritorio.add(iVista);
         escritorio.moveToFront(iVista);
     }//GEN-LAST:event_jMenuItem9ActionPerformed
+
+    private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
+        escritorio.removeAll();
+        escritorio.repaint();
+        VistaCargaNotas cnVista = new VistaCargaNotas();
+        cnVista.setVisible(true);
+        escritorio.add(cnVista);
+        escritorio.moveToFront(cnVista);
+    }//GEN-LAST:event_jMenuItem10ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -179,7 +179,7 @@ public class CursadaData {
             Materia materia;
             while(resultSet.next()){
                 materia = new Materia();
-                materia.setId(resultSet.getInt("id"));
+                materia.setId(resultSet.getInt("idMateria"));
                 materia.setNombre(resultSet.getString("nombre"));
                 materias.add(materia);
             }      
@@ -218,14 +218,14 @@ public class CursadaData {
         
     
     }
-    public void actualizarNotaCursada(int idAlumno,int idMateria, int nota){
+    public void actualizarNotaCursada(int idAlumno,int idMateria, double nota){
     
         try {
             
             String sql = "UPDATE cursada SET nota = ? WHERE idAlumno =? and idMateria =?;";
 
             PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-            statement.setInt(1,nota);
+            statement.setDouble(1,nota);
             statement.setInt(2, idAlumno);
             statement.setInt(3, idMateria);
            

@@ -73,6 +73,10 @@ public class VistaInscripciones extends javax.swing.JInternalFrame {
         jbAnular = new javax.swing.JButton();
         jbSalir = new javax.swing.JButton();
 
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(153, 0, 153));
         jLabel1.setText("FORMULARIO INSCRIPCION");
